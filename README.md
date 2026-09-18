@@ -1,10 +1,10 @@
-# Rhythm & Rolls
+# Rollcycle
 
 *Menstrual cycle tracking meets BJJ & gym training.*
 
-Rhythm & Rolls helps you understand how your training performance connects to where you are in your menstrual cycle — log BJJ rolls and gym sessions, track your cycle phase, and see how your daily "score" trends across Menstrual, Follicular, Ovulation, and Luteal phases.
+Rollcycle helps you understand how your training performance connects to where you are in your menstrual cycle — log BJJ rolls and gym sessions, track your cycle phase, and see how your daily "score" trends across Menstrual, Follicular, Ovulation, and Luteal phases.
 
-> **Working title.** "Rhythm & Rolls" is a placeholder name — swap it out below once you settle on something final.
+> **Working title.** "Rollcycle" is a placeholder name — swap it out below once you settle on something final.
 
 ---
 
@@ -92,7 +92,3 @@ app/src/main/res/raw/
 - No cloud sync/backup — all data is local to the device via internal-storage CSVs.
 
 ---
-
-## License
-
-*(Add your preferred license here.)*
