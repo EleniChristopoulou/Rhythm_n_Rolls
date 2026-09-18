@@ -1,0 +1,81 @@
+﻿date,name,reps,weight,period,effectiveness,group,cycle_number,cycle_day
+19/8/2026,Calf Raise,15,20,Menstrual,18,Lower Body,0,2
+19/8/2026,Back extension,15,5,Menstrual,9,Lower Body,0,2
+19/8/2026,Knee to elbow,20,0,Menstrual,8,Lower Body,0,2
+19/8/2026,Goblet Squat,10,12,Menstrual,11.2,Lower Body,0,2
+19/8/2026,Hip Adduction,15,32,Menstrual,25.2,Lower Body,0,2
+19/8/2026,Hip Abductor,15,41,Menstrual,30.6,Lower Body,0,2
+19/8/2026,Hip Thrust,15,40,Menstrual,30,Lower Body,0,2
+19/8/2026,Bulgarian Split,12,0,Menstrual,4.8,Lower Body,0,2
+19/8/2026,Kettlebell Swing,12,12,Menstrual,22.8,Lower Body,0,2
+19/8/2026,Romanian Deadlift,12,20,Menstrual,16.8,Lower Body,0,2
+19/8/2026,Ab Leg Raises,15,0,Menstrual,6,Lower Body,0,2
+19/8/2026,Glute Bridges,15,0,Menstrual,6,Warm Up,0,2
+19/8/2026,Sprint,2,0,Menstrual,0.8,Warm Up,0,2
+19/8/2026,Push Up,8,0,Menstrual,3.2,Warm Up,0,2
+19/8/2026,Squat,15,0,Menstrual,6,Warm Up,0,2
+19/8/2026,Back Extension Original,20,0,Menstrual,8,Warm Up,0,2
+19/8/2026,Ab Crunches,15,0,Menstrual,6,Warm Up,0,2
+19/8/2026,Bjj Type Of Stretching,20,20,Menstrual,20,Warm Up,0,2
+19/8/2026,Push press,20,8,Menstrual,12.8,Upper Body,0,2
+20/8/2026,Push Press,10,8,Menstrual,8.8,Upper Body,0,3
+20/8/2026,Lat Pulldown,12,32,Menstrual,24,Upper Body,0,3
+20/8/2026,Neutral-Grip Lat Pulldown,12,32,Menstrual,24,Upper Body,0,3
+20/8/2026,Close-Grip Lat Pulldown,12,32,Menstrual,24,Upper Body,0,3
+20/8/2026,Close-Grip Inverted Lat Pulldown,12,32,Menstrual,24,Upper Body,0,3
+20/8/2026,Behind-The-Neck Lat Pulldown,12,32,Menstrual,24,Upper Body,0,3
+20/8/2026,Cable Row,12,28,Menstrual,21.6,Upper Body,0,3
+20/8/2026,Bench Press,10,5,Menstrual,7,Upper Body,0,3
+20/8/2026,Front Raise,12,4,Menstrual,7.2,Upper Body,0,3
+20/8/2026,Side Delt Exercise,15,3,Menstrual,7.8,Upper Body,0,3
+20/8/2026,Dumbel Curl,10,12.5,Menstrual,11.5,Upper Body,0,3
+20/8/2026,Cable Tricep Pulldown,12,9,Menstrual,10.2,Upper Body,0,3
+20/8/2026,Back Extension,15,5,Menstrual,9,Upper Body,0,3
+20/8/2026,Knee To Elbow,20,0,Menstrual,8,Upper Body,0,3
+20/8/2026,Glute Bridges,15,0,Menstrual,6,Warm Up,0,3
+20/8/2026,Sprint,1,0,Menstrual,0.4,Warm Up,0,3
+20/8/2026,Push Up,8,0,Menstrual,3.2,Warm Up,0,3
+20/8/2026,Squat,15,0,Menstrual,6,Warm Up,0,3
+20/8/2026,Back Extension Original,20,0,Menstrual,8,Warm Up,0,3
+20/8/2026,Ab Crunches,15,0,Menstrual,6,Warm Up,0,3
+20/8/2026,Bjj Type Of Stretching,20,20,Menstrual,20,Warm Up,0,3
+24/8/2026,Calf Raise,15,10,Follicular,12,Lower Body,0,7
+24/8/2026,Back extension,15,5,Follicular,9,Lower Body,0,7
+24/8/2026,Knee to elbow,20,0,Follicular,8,Lower Body,0,7
+24/8/2026,Goblet Squat,10,12,Follicular,11.2,Lower Body,0,7
+24/8/2026,Hip Adduction,20,32,Follicular,27.2,Lower Body,0,7
+24/8/2026,Hip Abductor,15,41,Follicular,30.6,Lower Body,0,7
+24/8/2026,Hip Thrust,12,40,Follicular,28.8,Lower Body,0,7
+24/8/2026,Bulgarian Split,15,0,Follicular,6,Lower Body,0,7
+24/8/2026,Kettlebell Swing,10,12,Follicular,11.2,Lower Body,0,7
+24/8/2026,Romanian Deadlift,12,20,Follicular,16.8,Lower Body,0,7
+24/8/2026,Ab Leg Raises,15,0,Follicular,6,Lower Body,0,7
+24/8/2026,Glute bridges,15,0,Follicular,6,Warm Up,0,7
+24/8/2026,Sprint,2,0,Follicular,0.8,Warm Up,0,7
+24/8/2026,Push Up,8,0,Follicular,3.2,Warm Up,0,7
+24/8/2026,Squat,15,0,Follicular,6,Warm Up,0,7
+24/8/2026,Back Extension Original,20,0,Follicular,8,Warm Up,0,7
+24/8/2026,Ab Crunches,15,0,Follicular,6,Warm Up,0,7
+24/8/2026,Bjj Type Of Stretching,20,20,Follicular,20,Warm Up,0,7
+24/8/2026,Push press,20,8,Follicular,12.8,Upper Body,0,7
+24/8/2026,Box Jumps,8,0,Follicular,3.2,Lower Body,0,7
+25/8/2026,Push Press,10,8,Follicular,8.8,Upper Body,0,8
+25/8/2027,Lat Pulldown,12,32,Follicular,24,Upper Body,0,8
+25/8/2028,Neutral-Grip Lat Pulldown,12,25,Follicular,19.8,Upper Body,0,8
+25/8/2029,Close-Grip Lat Pulldown,12,25,Follicular,19.8,Upper Body,0,8
+25/8/2030,Close-Grip Inverted Lat Pulldown,12,25,Follicular,19.8,Upper Body,0,8
+25/8/2031,Behind-The-Neck Lat Pulldown,12,25,Follicular,19.8,Upper Body,0,8
+25/8/2032,Cable Row,12,20,Follicular,16.8,Upper Body,0,8
+25/8/2033,Bench Press,10,5,Follicular,7,Upper Body,0,8
+25/8/2034,Front Raise,12,4,Follicular,7.2,Upper Body,0,8
+25/8/2035,Side Delt Exercise,15,3,Follicular,7.8,Upper Body,0,8
+25/8/2036,Dumbel Curl,10,12.5,Follicular,11.5,Upper Body,0,8
+25/8/2037,Cable Tricep Pulldown,12,9,Follicular,10.2,Upper Body,0,8
+25/8/2040,Glute bridges,15,0,Follicular,6,Warm Up,0,8
+25/8/2041,Sprint,10,0,Follicular,4,Warm Up,0,8
+25/8/2042,Push Ups,8,0,Follicular,3.2,Warm Up,0,8
+25/8/2043,Squat,15,0,Follicular,6,Warm Up,0,8
+25/8/2044,Back Extension Original,20,0,Follicular,8,Warm Up,0,8
+25/8/2045,Ab Crunches,15,0,Follicular,6,Warm Up,0,8
+25/8/2046,Bjj Type Of Stretching,20,20,Follicular,20,Warm Up,0,8
+25/8/2026,Push press,20,12,Folliculars,15.2,Upper Body,0,8

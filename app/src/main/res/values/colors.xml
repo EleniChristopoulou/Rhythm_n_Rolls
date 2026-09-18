@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ECDFCC</color>
+    <color name="text">#F4A9C3</color>
+    <color name="background">#060932</color>
+    <color name="primary">#333457</color>
+    <color name="secondary">#595B82</color>
+    <color name="accent">#30CF8F</color>
+
+    <color name="white_belt_stripe">#ECDFCC</color>
+    <color name="black_belt">#000000</color>
+    <color name="blue_belt">#123C78</color>
+    <color name="purple_belt">#5B2A86</color>
+    <color name="brown_belt">#6B3E26</color>
+    <color name="red_stripe">#8B1E2D</color>
+
+    <color name="menstrual">#F49A9A</color>
+    <color name="follicular">#C7A8F5</color>
+    <color name="ovulation">#9AC7F5</color>
+    <color name="lutheal">#B4E5A2</color>
+</resources>

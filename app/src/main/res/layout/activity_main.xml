@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="32dp">
+
+        <!-- ===================== HEADER ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Well hello there!"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.7"
+                    android:text="Monday, August 17"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="44dp"
+                android:layout_height="70dp"
+                android:background="@color/secondary"
+                android:src="@drawable/goose"
+                app:shapeAppearanceOverlay="@style/CircleImage"/>
+        </LinearLayout>
+
+        <!-- ===================== CYCLE PHASE CARD ===================== -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCyclePhase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/primary"
+            app:strokeColor="@color/primary"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvCyclePhaseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Ovulation Phase"
+                        android:textColor="@color/text"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/iconPhase"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/menstrual"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"></ImageView></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvCycleDayCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Day 14"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressCycle"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="14dp"
+                    android:max="28"
+                    android:progress="14"
+                    android:progressBackgroundTint="@color/secondary"
+                    android:progressTint="@color/accent" />
+
+                <TextView
+                    android:id="@+id/tvCycleInsight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:alpha="0.8"
+                    android:text="Peak energy window — great day for a strength PR attempt"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ===================== QUICK STATS ROW ===================== -->
+        <LinearLayout
+            android:id="@+id/rowQuickStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Streak -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/primary"
+                app:strokeColor="@color/primary"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="14dp">
+
+                    <TextView
+                        android:id="@+id/daysStreak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="6"
+                        android:textColor="@color/accent"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="DAYS STREAK"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Sessions this week -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/primary"
+                app:strokeColor="@color/primary"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="14dp">
+
+                    <TextView
+                        android:id="@+id/gym_session"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="4"
+                        android:textColor="@color/text"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="GYM SESSIONS"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- BJJ sessions -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/primary"
+                app:strokeColor="@color/primary"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="14dp">
+
+                    <TextView
+                        android:id="@+id/bjj_session"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textColor="@color/text"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="BJJ ROLLS"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- ===================== TODAY'S PLAN ===================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvTodayPlanHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="My score this cycle"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/cycleLoggedMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="August"
+            android:layout_gravity="end"
+            android:alpha="0.8"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+        <TextView
+            android:layout_gravity="end"
+            android:id="@+id/cycleLogged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cycle: 1 / 12"
+            android:alpha="0.8"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:alpha="0.5"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cycleScoreChart">
+
+                <View
+                    android:id="@+id/beltLeft"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <View
+                        android:id="@+id/backgr1"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black_belt" />
+                    <View
+                        android:id="@+id/stripe1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+                    <View
+                        android:id="@+id/backgr2"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black_belt" />
+                    <View
+                        android:id="@+id/stripe2"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+
+                    <View
+                        android:id="@+id/backgr3"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black_belt" />
+                    <View
+                        android:id="@+id/stripe3"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+                    <View
+                        android:id="@+id/backgr4"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black_belt" />
+
+                    <View
+                        android:id="@+id/stripe4"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+                    <View
+                        android:id="@+id/backgr5"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black_belt" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/beltRight"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:onClick="perviousMonth"
+                android:id="@+id/btnPreviousCycle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cycleScoreChart" />
+
+            <com.example.bloodstamina.charts.CycleScoreChartView
+                android:id="@+id/cycleScoreChart"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:onClick="nextMonth"
+                android:id="@+id/btnNextCycle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/forth"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cycleScoreChart" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTodayPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/primary"
+            app:strokeColor="@color/primary"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+
+                <TextView
+                    android:id="@+id/tvWorkoutMeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:text="4 Day Streak"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvWorkoutName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Today's Plan"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/vTypeDot"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:backgroundTint="@color/menstrual"
+                        android:background="@drawable/dot_accent" />
+
+                    <TextView
+                        android:id="@+id/tvWorkoutType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:alpha="0.75"
+                        android:letterSpacing="0.06"
+                        android:text="BEST DAY: 4th · SCORE: 420"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnStartWorkout"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:fontFamily="sans-serif-medium"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Log Workout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/accent"
+                    android:onClick="logExercices"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnStartCycle"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:fontFamily="sans-serif-medium"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Log Cycle"
+                    android:textAllCaps="false"
+                    android:textColor="@color/accent"
+                    android:onClick="logCycle"
+                    app:cornerRadius="14dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/btnStartBjj"
+                        android:layout_weight="1"
+                        android:layout_width="130dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/background"
+                        android:fontFamily="sans-serif-medium"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="Log BJJ"
+                        android:textAllCaps="false"
+                        android:textColor="@color/accent"
+                        android:onClick="logBjjSession"
+                        app:cornerRadius="14dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/btnUpgradeBelt"
+                        android:layout_width="130dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/background"
+                        android:fontFamily="sans-serif-medium"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="Upgrade Belt"
+                        android:textAllCaps="false"
+                        android:textColor="@color/accent"
+                        android:onClick="logBjjBelt"
+                        app:cornerRadius="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ===================== WELLNESS SNAPSHOT ===================== -->
+<!--        <TextView-->
+<!--            android:id="@+id/tvWellnessHeader"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:fontFamily="sans-serif-medium"-->
+<!--            android:text="My mood for today"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/cardWellness"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            app:cardBackgroundColor="@color/primary"-->
+<!--            app:strokeColor="@color/primary"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            app:cardElevation="0dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="18dp"-->
+<!--                android:weightSum="3">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="😊"-->
+<!--                        android:textSize="22sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:alpha="0.7"-->
+<!--                        android:text="Mood"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="11sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Good"-->
+<!--                        android:textColor="@color/text"-->
+<!--                        android:textSize="13sp" />-->
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/secondary" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="🔋"-->
+<!--                        android:textSize="22sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:alpha="0.7"-->
+<!--                        android:text="Energy"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="11sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="High"-->
+<!--                        android:textColor="@color/text"-->
+<!--                        android:textSize="13sp" />-->
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/secondary" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="😴"-->
+<!--                        android:textSize="22sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:alpha="0.7"-->
+<!--                        android:text="Sleep"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="11sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="7.5h"-->
+<!--                        android:textColor="@color/text"-->
+<!--                        android:textSize="13sp" />-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
